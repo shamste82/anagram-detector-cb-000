@@ -18,7 +18,7 @@ class Anagram
       if w == sorted_word
         index = i
       end
-    list_of_matches << index[i]
+    list_of_matches << w[i]
     end
     puts "#{list_of_matches}"
     list_of_matches
