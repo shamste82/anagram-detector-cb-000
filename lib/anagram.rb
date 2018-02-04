@@ -16,8 +16,8 @@ class Anagram
       if w == sorted_wowrd
         match = true
       end
+    end
     match
-
   end
 
 end
