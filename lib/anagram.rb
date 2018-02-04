@@ -18,7 +18,7 @@ class Anagram
         index << i
       end
     end
-    list_of_matches << w[i]
+    index.each { |x| list_of_matches << w[i]}
     puts "#{list_of_matches}"
     list_of_matches
   end
