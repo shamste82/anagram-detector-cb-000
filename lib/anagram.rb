@@ -12,11 +12,13 @@ class Anagram
     sorted_w = w.map { |w| w.chars.sort.join}
     puts("#{sorted_w}")
     match = false
+    index = 0
     list_of_matches = Array.new
-    sorted_w.each do |w|
+    sorted_w.each_with_index do |w, i|
       if w == sorted_word
-        list_of_matches << w
+        index = i
       end
+    list_of_matches << index[i]
     end
     puts "#{list_of_matches}"
     list_of_matches
