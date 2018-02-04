@@ -14,8 +14,8 @@ class Anagram
     match = false
     index = 0
     list_of_matches = Array.new
-    sorted_w.each_with_index do |w, i|
-      if w == sorted_word
+    sorted_w.each_with_index do |x, i|
+      if x == sorted_word
         index = i
       end
     list_of_matches << w[i]
