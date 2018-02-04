@@ -6,20 +6,19 @@ class Anagram
   end
 
   def match(w)
-    puts "#{@word}"
-    puts "#{w}"
+    # Sorts the words alphabetically
     sorted_word = @word.chars.sort.join
     sorted_w = w.map { |w| w.chars.sort.join}
-    puts("#{sorted_w}")
     index = Array.new
     list_of_matches = Array.new
+    #Matches to check if anagrams
     sorted_w.each_with_index do |x, i|
       if x == sorted_word
         index << i
       end
     end
+    #Create an array of unsorted/original matches and returns it
     index.each { |x| list_of_matches << w[x]}
-    puts "#{list_of_matches}"
     list_of_matches
   end
 
