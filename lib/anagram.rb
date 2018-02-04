@@ -18,6 +18,7 @@ class Anagram
         list_of_matches << w
       end
     end
+    puts "#{list_of_matches}"
     list_of_matches
   end
 
