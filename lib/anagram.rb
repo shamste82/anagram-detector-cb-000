@@ -13,7 +13,7 @@ class Anagram
     puts("#{sorted_w}")
     match = false
     sorted_w.each do |w|
-      if w == sorted_wowrd
+      if w == sorted_word
         match = true
       end
     end
